@@ -4,7 +4,6 @@ import { Row, Col } from 'react-bootstrap'
 
 import Product from '../components/Product'
 import { listProducts } from '../actions/productActions'
-import { productListReducer } from '../reducers/productReducers'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 
