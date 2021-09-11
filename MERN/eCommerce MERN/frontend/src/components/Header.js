@@ -5,7 +5,7 @@ import {useDispatch, useSelector} from 'react-redux'
 
 import { logout } from '../actions/userAction'
 
-const Header = () => {
+const Header = ({ history }) => {
     const dispatch = useDispatch()
 
     const userLogin = useSelector(state => state.userLogin)
@@ -13,6 +13,7 @@ const Header = () => {
 
     const logoutHandler = () => {
         dispatch(logout())
+        history.push('/')
     }
 
     return (
